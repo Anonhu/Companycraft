@@ -17,16 +17,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     
-    <repositories>
+   <repositories>
         <repository>
+            <id>extendedclip-repo</id>
+            <url>https://repo.extendedclip.com/content/repositories/public/</url>
+        </repository>
+       <repository>
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
-        <repository>
-            <id>vault-repo</id>  <url>https://repo.glaremasters.me/repository/public/</url>
-        </repository>
     </repositories>
-    
+
+
     <dependencies>
         <dependency>
             <groupId>org.spigotmc</groupId>
@@ -34,13 +36,11 @@
             <version>1.17.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-         <dependency>
-            <groupId>net.milkbowl.vault</groupId>
-            <artifactId>Vault</artifactId>
-            <version>1.7</version>
-            <scope>provided</scope>
-        </dependency>
-         <dependency>
+        <dependency>
+        <groupId>net.milkbowl.vault</groupId>
+        <artifactId>VaultAPI</artifactId>
+        <version>1.7</version>
+        <scope>provided</scope>
             <groupId>com.Zrips</groupId>
             <artifactId>CMI</artifactId>
             <version>9.1.1.0</version>
