@@ -1,0 +1,12 @@
+name: MyCompanyPlugin
+version: 1.0
+main: com.mycompanyplugin.MyCompanyPlugin
+description: My company plugin
+api-version: 1.17
+author: user
+commands:
+  company:
+    description: base company command
+    usage: /company help
+    permission: mycompanyplugin.company
+    permission-message: You do not have permission to perform this command.
