@@ -19,15 +19,15 @@
     
     <repositories>
         <repository>
-            <id>spigotmc-repo</id>
+            <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
         <repository>
-            <id>vault-repo</id>
-            <url>https://mvn.tommytony.com/</url>
-        </repository>
-        <repository>
             <id>glare-repo</id>
+            <url>https://repo.glaremasters.me/repository/public/</url>
+        </repository>        
+ <repository>
+            <id>placeholderapi</id>
             <url>https://repo.glaremasters.me/repository/public/</url>
         </repository>
     </repositories>
@@ -39,10 +39,16 @@
             <version>1.17.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>com.tommytony.vault</groupId>
-            <artifactId>Vault</artifactId>
+         <dependency>
+            <groupId>net.milkbowl.vault</groupId>
+            <artifactId>VaultAPI</artifactId>
             <version>1.7</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.Zrips</groupId>
+            <artifactId>CMI</artifactId>
+            <version>9.1.1.0</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
