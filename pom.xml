@@ -64,9 +64,6 @@
                     <target>17</target>
                 </configuration>
             </plugin>
-            <plugin>
-                 <groupId>org.apache.maven.plugins</groupId>
-            </plugin>
         </plugins>
         <resources>
             <resource>
