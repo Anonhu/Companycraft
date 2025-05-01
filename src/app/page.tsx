@@ -32,8 +32,11 @@ import {
   updatePlayerBalance, // Import for simulating actions
   updateCompanyCapital, // Import for simulating actions
   applyDailyTaxes,
-  checkExpiredTasks
+  checkExpiredTasks,
+  hasPermission // Import the missing function
 } from '@/lib/data'; // Using the in-memory store
+import { CompanyPermission } from '@/types'; // Import the enum
+
 
 export default function CompanyCraftDashboard() {
   // Simulate logged-in player ID (replace with actual auth state later)
@@ -253,12 +256,6 @@ export default function CompanyCraftDashboard() {
   // --- Render Logic ---
   if (!player) {
     return <div className="p-4">Loading player data...</div>;
-  }
-
-  const getRankPermissions = (rank: Member['rank']) => {
-    // Simple lookup from RankPermissions (defined in types/index.ts or lib/data.ts)
-    // Example: return RankPermissions[rank] || [];
-    return []; // Placeholder
   }
 
   const PlayerInfo = () => (
